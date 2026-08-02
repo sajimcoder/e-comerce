@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root{
+  --header-text-color: #3a3a3a;
+  }
+
+  body{
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+
+ /* nav bar */
+  .brand-name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--header-text-color);
+  }
+
+  nav> ul> li> a{
+    text-decoration: none;
+    color: var(--header-text-color);
+  }
+
+  nav> ul> li{
+    list-style: none;
+  }
+
+   .nav-bar-list{
+    display: flex;
+    gap: 1.5rem;
+    font-weight: 600;
+    align-items: center;
+   }
+
+   .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+   }
+
+   nav> ul> li> a:hover{
+    color: rgba(224, 44, 109, 1);
+    border-bottom: 5px solid rgba(224, 44, 109, 1);
+    padding-bottom: 5px;
+   }
+
+   .nav-bar-list-separator{
+      display: flex;
+      gap: 1.5rem;
+    }
+    .nav-bar-list-separator> li{
+      list-style: none;
+    }
+    .nav-bar-list-separator> li> a{
+      text-decoration: none;
+      color: var(--header-text-color);
+    }
+    /* responsive nav bar */
+
+   @media screen and (max-width: 576px) {
+    body{
+      width: 100%;
+    }
+    .nav-bar{
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .nav-bar-list{
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0;
+    }
+    .nav-bar-list-separator{
+      display: flex;
+      gap: 1rem;
+    }
+    .nav-bar-list-separator> li{
+      list-style: none;
+    }
+    .nav-bar-list-separator> li> a{
+      text-decoration: none;
+      color: var(--header-text-color);
+    }
+
+   }
+
+ /* hero section */
+.hero-section{
+  max-width: 1188px;
+  margin: 0 auto;
+}
+
+ .hero-section-content{
+  max-width: 582px;
+ }
+
+ .hero-section-heading{
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: var(--header-text-color);
+  margin: 0;
+  }
+  .hero-section-subheading{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--header-text-color);
+    margin:0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-section-button{
+    background-color: rgba(224, 44, 109, 1);
+    color: white;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.625rem 1.5rem;
+    border-radius: 2.563rem;
+    text-decoration: none;
+  }
