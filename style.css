@@ -9,11 +9,18 @@
 :root{
   --header-text-color: #3a3a3a;
   }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
   body{
     width: 1200px;
     margin: 0 auto;
-    
+    padding: 20px 10px 0 10px;
+    border-left: 3px solid rgba(10, 8, 38, 1);
+    border-right: 3px solid rgba(10, 8, 38, 1);
   }
 
 
@@ -69,6 +76,7 @@
    @media screen and (max-width: 576px) {
     body{
       width: 100%;
+      padding: 20px 10px 0 10px;
     }
     .nav-bar{
       flex-direction: column;
@@ -150,6 +158,10 @@
     
   }
 
+  .hero-section-button:hover{
+    background-color: rgba(224, 44, 109, 0.8);
+    
+  }
   
 
   /* hero section  responsive */
@@ -266,6 +278,12 @@
   
 }
 
+.hero-button-2nd:hover{
+  background-color: rgba(224, 44, 109, 0.8);
+  
+}
+
+
 /* 2nd hero section responsive */
 @media screen and (max-width: 768px) {
   .hero-section-2nd {
@@ -284,4 +302,58 @@
     
   }
 
+}
+
+/* footer */
+footer{
+  background-color: rgba(10, 8, 38, 1);
+  padding: 3.2rem;
+  text-align: center;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+}
+ 
+.footer-content{
+  color: white;
+}
+
+.socials{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.socials li{
+  list-style: none;
+}
+
+.socials li a{
+  text-decoration: none;
+  color: white;
+}
+
+.footer-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+
+.footer-rights, .footer-description{
+  font-size:0.9rem;
+  color: white;
+  font-weight: 700;
+}
+
+.footer-description{
+  margin-top:3px;
+  margin-bottom: 3px;
+}
+
+.socials{
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
